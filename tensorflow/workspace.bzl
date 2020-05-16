@@ -461,13 +461,12 @@ def tf_workspace(path_prefix = "", tf_repo_name = ""):
     tf_http_archive(
         name = "swig",
         build_file = clean_dep("//third_party:swig.BUILD"),
-        sha256 = "58a475dbbd4a4d7075e5fe86d4e54c9edde39847cdb96a3053d87cb64a23a453",
-        strip_prefix = "swig-3.0.8",
+        sha256 = "7a00b4d0d53ad97a14316135e2d702091cd5f193bb58bcfcd8bc59d41e7887a9",
+        strip_prefix = "swig-4.0.1",
         system_build_file = clean_dep("//third_party/systemlibs:swig.BUILD"),
         urls = [
-            "http://mirror.tensorflow.org/ufpr.dl.sourceforge.net/project/swig/swig/swig-3.0.8/swig-3.0.8.tar.gz",
-            "http://ufpr.dl.sourceforge.net/project/swig/swig/swig-3.0.8/swig-3.0.8.tar.gz",
-            "http://pilotfiber.dl.sourceforge.net/project/swig/swig/swig-3.0.8/swig-3.0.8.tar.gz",
+	    "http://mirror.tensorflow.org/ufpr.dl.sourceforge.net/project/swig/swig/swig-4.0.1/swig-4.0.1.tar.gz",
+	    "https://sourceforge.net/projects/swig/files/swig/swig-4.0.1/swig-4.0.1.tar.gz",
         ],
     )
 
